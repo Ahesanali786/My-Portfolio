@@ -1,0 +1,980 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kadiwala Ahesanali - Backend Developer</title>
+    <meta name="description"
+        content="Professional Backend Developer specializing in scalable systems, APIs, and cloud architecture">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Cursor Follower -->
+    <div class="cursor-dot" data-cursor-dot></div>
+    <div class="cursor-outline" data-cursor-outline></div>
+
+    <!-- Background Elements -->
+    <div class="bg-animation">
+        <div class="floating-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+            <div class="shape shape-4"></div>
+            <div class="shape shape-5"></div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <div class="logo-icon">
+                    <span
+                        class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-primary text-white font-bold text-sm">
+                        AK
+                    </span>
+                </div>
+                <span class="logo-text">Ahesanali</span>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link" data-text="Home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link" data-text="About">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link" data-text="Skills">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link" data-text="Projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link" data-text="Contact">Contact</a>
+                </li>
+            </ul>
+            <div class="nav-controls">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <div class="nav-toggle" id="nav-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg">
+            <div class="grid-overlay"></div>
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+            <div class="gradient-orb orb-3"></div>
+        </div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="badge-dot"></span>
+                    Actively Seeking Backend Developer Roles
+                </div>
+                <h1 class="hero-title">
+                    <span class="title-line">Building</span>
+                    <span class="title-line highlight-gradient">Scalable</span>
+                    <span class="title-line">Backend Systems</span>
+                </h1>
+                <div class="hero-subtitle">
+                    <span class="typed-text"></span>
+                    <span class="cursor-blink">|</span>
+                </div>
+                <p class="hero-description">
+                    Passionate Backend Developer with 11 months of hands-on experience building robust and efficient
+                    server-side applications. Skilled in API development, database design, and writing clean,
+                    maintainable code using modern backend technologies.
+                </p>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="10">0</span>
+                        <span class="stat-label">Projects</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="11">0</span>
+                        <span class="stat-label">Month Exp</span>
+                    </div>
+                </div>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">
+                        <span class="btn-text">Let's Work Together</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#projects" class="btn btn-secondary">
+                        <span class="btn-text">View My Work</span>
+                        <i class="fas fa-eye"></i>
+                    </a>
+                </div>
+                <div class="hero-social">
+                    <a href="https://www.linkedin.com/in/kadiwala-ahesanali-142647303/" class="social-link"
+                        target="_blank" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com/Ahesanali786" target="_blank" class="social-link" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="#" class="social-link" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="social-link" aria-label="Stack Overflow">
+                        <i class="fab fa-stack-overflow"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="code-window">
+                    <div class="window-header">
+                        <div class="window-controls">
+                            <span class="control close"></span>
+                            <span class="control minimize"></span>
+                            <span class="control maximize"></span>
+                        </div>
+                        <div class="window-title">server.php</div>
+                    </div>
+                    <div class="code-content">
+                        <div class="code-line">
+                            <span class="line-number">1</span>
+                            <span class="code-text">
+                                <span class="keyword">use</span> <span class="class">Illuminate\Http\Request</span>;
+                            </span>
+                        </div>
+                        <div class="code-line">
+                            <span class="line-number">2</span>
+                            <span class="code-text">
+                                <span class="keyword">use</span> <span
+                                    class="class">Illuminate\Support\Facades\Route</span>;
+                            </span>
+                        </div>
+                        <div class="code-line">
+                            <span class="line-number">3</span>
+                            <span class="code-text"></span>
+                        </div>
+                        <div class="code-line">
+                            <span class="line-number">4</span>
+                            <span class="code-text">
+                                <span class="class">Route</span>::<span class="function">get</span>(<span
+                                    class="string">'/api'</span>,
+                                <span class="keyword">function</span>(<span class="parameter">Request $request</span>) {
+                            </span>
+                        </div>
+                        <div class="code-line">
+                            <span class="line-number">5</span>
+                            <span class="code-text">
+                                &nbsp;&nbsp;<span class="keyword">return</span> <span
+                                    class="function">response</span>()::<span class="function">json</span>([
+                            </span>
+                        </div>
+                        <div class="code-line">
+                            <span class="line-number">6</span>
+                            <span class="code-text">
+                                &nbsp;&nbsp;&nbsp;&nbsp;<span class="property">'message'</span> => <span
+                                    class="string">'Hello World!'</span>,
+                            </span>
+                        </div>
+                        <div class="code-line">
+                            <span class="line-number">7</span>
+                            <span class="code-text">
+                                &nbsp;&nbsp;]);
+                            </span>
+                        </div>
+                        <div class="code-line">
+                            <span class="line-number">8</span>
+                            <span class="code-text">});</span>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="tech-stack">
+                    <!-- PHP -->
+                    <div class="tech-item" data-tech="PHP">
+                        <i class="fab fa-php"></i>
+                    </div>
+
+                    <!-- Laravel (custom icon or image since FA doesn't have one) -->
+                    <div class="tech-item" data-tech="Laravel">
+                        <i class="fab fa-laravel"></i>
+                    </div>
+
+                    <!-- HTML5 -->
+                    <div class="tech-item" data-tech="HTML5">
+                        <i class="fab fa-html5"></i>
+                    </div>
+
+                    <!-- CSS3 -->
+                    <div class="tech-item" data-tech="CSS3">
+                        <i class="fab fa-css3-alt"></i>
+                    </div>
+
+                    <!-- Bootstrap -->
+                    <div class="tech-item" data-tech="Bootstrap">
+                        <i class="fab fa-bootstrap"></i>
+                    </div>
+                    <div class="tech-item" data-tech="JavaScript">
+                        <i class="fab fa-js"></i>
+                    </div>
+
+
+                    <!-- Tailwind CSS (custom image) -->
+                    <div class="tech-item" data-tech="Tailwind CSS">
+                        <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-6 h-6">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M11.7 24.66C13.9 20.55 17.04 18.5 21.12 18.5C25.74 18.5 27.81 21.09 28.44 25.28C29.37 31.4 32.02 34.5 36.39 34.5C40.34 34.5 43.34 32.2 45.37 27.6C43.14 31.72 40.01 33.77 35.93 33.77C31.31 33.77 29.24 31.18 28.61 26.99C27.68 20.87 25.03 17.77 20.66 17.77C16.71 17.77 13.71 20.07 11.68 24.67H11.7ZM2.62 27.59C4.86 31.71 7.99 33.76 12.07 33.76C16.69 33.76 18.76 31.17 19.39 26.98C20.32 20.86 22.97 17.76 27.34 17.76C31.29 17.76 34.29 20.06 36.32 24.66C34.1 20.54 30.96 18.49 26.88 18.49C22.26 18.49 20.19 21.08 19.56 25.27C18.63 31.39 15.98 34.49 11.61 34.49C7.66 34.49 4.66 32.19 2.63 27.59H2.62Z"
+                                fill="#38BDF8" />
+                        </svg>
+                    </div>
+                    <!-- MySQL -->
+                    <div class="tech-item" data-tech="MySQL">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+                            alt="MySQL" style="width: 24px; height: 24px;">
+                    </div>
+
+                    <!-- AJAX -->
+                    <div class="tech-item" data-tech="AJAX">
+                        <i class="fas fa-sync-alt"></i> <!-- no official icon, using sync as alternative -->
+                    </div>
+
+                    <!-- RESTful API -->
+                    <div class="tech-item" data-tech="REST API">
+                        <i class="fas fa-cogs"></i> <!-- used for API/logic -->
+                    </div>
+                    <div class="tech-item" data-tech="REST API">
+                        <i class="fab fa-github"></i>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- <div class="scroll-indicator">
+            <div class="scroll-line"></div>
+            <span class="scroll-text">Scroll to explore</span>
+        </div> -->
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">About Me</span>
+                <h2 class="section-title">Crafting Scalable Architectures</h2>
+                <p class="section-subtitle">
+                    Passionate about building scalable backend systems that power modern applications
+                </p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="text-block">
+                        <h3>Backend Development Expert</h3>
+                        <p>
+                            As a passionate backend developer with 11 months of practical experience, I specialize in
+                            developing efficient and secure server-side systems using modern tools and frameworks.
+                        </p>
+                    </div>
+                    <div class="text-block">
+                        <h3>API Development & Version Control</h3>
+                        <p>
+                            I have hands-on experience in designing and building RESTful APIs using modern backend
+                            frameworks like Laravel.
+                            I follow clean and consistent API structuring practices to ensure scalability and easy
+                            integration with frontend and third-party services.
+                            I also implement version control in APIs to manage updates without breaking existing
+                            functionality, ensuring smooth backward compatibility.
+                        </p>
+                    </div>
+
+                    <div class="experience-grid">
+                        <div class="exp-item">
+                            <div class="exp-icon">
+                                <i class="fas fa-server"></i>
+                            </div>
+                            <div class="exp-content">
+                                <h4>API Development</h4>
+                                <p>RESTful & GraphQL APIs</p>
+                            </div>
+                        </div>
+                        <div class="exp-item">
+                            <div class="exp-icon">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <div class="exp-content">
+                                <h4>Database Design</h4>
+                                <p>SQL & MySQL Optimization</p>
+                            </div>
+                        </div>
+                        <div class="exp-item">
+                            <div class="exp-icon">
+                                <i class="fab fa-github"></i>
+                            </div>
+                            <div class="exp-content">
+                                <h4>Git & GitHub</h4>
+                                <p>Version Control, Collaboration & CI/CD</p>
+                            </div>
+                        </div>
+
+                        <div class="exp-item">
+                            <div class="exp-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <div class="exp-content">
+                                <h4>Security</h4>
+                                <p>Authentication & Authorization</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cta-buttons">
+                        <a href="assets/Ahesanali CV.pdf" class="btn btn-primary"
+                            download="Ahesanali_Kadiwala_Resume.pdf">
+                            <i class="fas fa-download"></i>
+                            <span class="btn-text">Download Resume</span>
+                        </a>
+
+                        <a href="#contact" class="btn btn-outline">
+                            <span class="btn-text">Get In Touch</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="about-visual">
+                    <div class="profile-card">
+                        <div class="card-header">
+                            <div class="profile-image">
+                                <img src="assets/Wavy_Tech-22_Single-06.jpg" alt="Profile">
+                                <div class="status-indicator"></div>
+                            </div>
+                            <div class="profile-info">
+                                <h3>Kadiwala Ahesanali</h3>
+                                <p>Backend Developer</p>
+                            </div>
+                        </div>
+                        <div class="card-stats">
+                            <div class="stat">
+                                <span class="stat-value">10+</span>
+                                <span class="stat-label">Projects</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value">11+</span>
+                                <span class="stat-label">Months EXP.</span>
+                            </div>
+                        </div>
+                        <div class="card-skills">
+                            <div class="skill-tag">PHP</div>
+                            <div class="skill-tag">LARAVEL</div>
+                            <div class="skill-tag">MYSQL</div>
+                            <div class="skill-tag">HTML</div>
+                            <div class="skill-tag">CSS</div>
+                            <div class="skill-tag">BOOTSTRAP</div>
+                            <div class="skill-tag">TAILWIND</div>
+                            <div class="skill-tag">JAVASCRIPT</div>
+                            <div class="skill-tag">AJEX</div>
+                            <div class="skill-tag">VERSION CONTROL</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Technical Skills</span>
+                <h2 class="section-title">Technologies I Master</h2>
+                <p class="section-subtitle">
+                    Powering modern digital experiences with clean, scalable backend logic
+                </p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>Core Programming Skills</h3>
+                    </div>
+                    <div class="skills-list">
+
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">JavaScript</span>
+                                <span class="skill-level">Expert</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="85"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">PHP</span>
+                                <span class="skill-level">Advanced</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="90"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">HTML5</span>
+                                <span class="skill-level">Advanced</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="85"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">CSS3</span>
+                                <span class="skill-level">Intermediate</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="75"></div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-layer-group"></i>
+                        </div>
+                        <h3>Frameworks & Tools</h3>
+                    </div>
+                    <div class="skills-list">
+
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Laravel</span>
+                                <span class="skill-level">Expert</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="95"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Bootstrap</span>
+                                <span class="skill-level">Advanced</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="88"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Tailwind CSS</span>
+                                <span class="skill-level">Intermediate</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="82"></div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="skill-category">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <h3>Databases</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">MYSQL</span>
+                                <span class="skill-level">Expert</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="92"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Portfolio</span>
+                <h2 class="section-title">My Projects</h2>
+                <p class="section-subtitle">
+                    A curated collection of impactful backend projects, built with precision, performance, and
+                    scalability in mind.
+                </p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card featured">
+                    <div class="project-image">
+                        <img src="assets/homeservices.jpg" alt="E-commerce Platform">
+                        <div class="project-overlay">
+                            <div class="overlay-content">
+                                <a href="#" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <span class="project-type">Featured Project</span>
+                            <h3>Fixtora – On-Demand Home Services Platform:</h3>
+                        </div>
+                        <p class="project-description">
+                            A scalable home services backend built using Laravel with modular architecture.
+                            Features include customer booking, real-time service tracking, technician assignment,
+                            role-based access (admin, vendor, user), OTP-based login (Google Authenticator), service
+                            listing by category, secure payment integration,Send Notifications,Send Email, and Map API
+                            integration.
+
+
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">🚀 PHP (Laravel)</span>
+                            <span class="tech-tag">🗄️ MySQL</span>
+                            <span class="tech-tag">🔁 AJAX</span>
+                            <span class="tech-tag">⚡ JavaScript</span>
+                            <span class="tech-tag">🎨 Tailwind CSS</span>
+                            <span class="tech-tag">🧰 Bootstrap</span>
+                            <span class="tech-tag">🔗 GitHub</span>
+                        </div>
+
+                        <div class="project-stats">
+                            <div class="stat">
+                                <i class="fas fa-clock"></i>
+                                <span>Coming Soon</span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/banner_bg.svg" alt="Social Media API">
+                        <div class="project-overlay">
+                            <div class="overlay-content">
+                                <a href="#" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="https://github.com/Ahesanali786/Recipies_Manegment" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>Recipes Management System</h3>
+                        </div>
+                        <p class="project-description">
+                            A dynamic backend built with Laravel for managing recipes with features like category-based
+                            listing,
+                            ingredient management, user-authored recipe submissions, role-based access (admin/user),
+                            image uploads,
+                            and secure CRUD operations with validation.
+                        </p>
+
+                        <div class="project-tech">
+                            <span class="tech-tag">⚙️ Laravel</span>
+                            <span class="tech-tag">🐘 PHP</span>
+                            <span class="tech-tag">📄 HTML</span>
+                            <span class="tech-tag">🎨 CSS</span>
+                            <span class="tech-tag">🔁 AJAX</span>
+                            <span class="tech-tag">🧰 Bootstrap</span>
+                            <span class="tech-tag">🔗 GitHub</span>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/billing-system-software.jpg" alt="Analytics Dashboard">
+                        <div class="project-overlay">
+                            <div class="overlay-content">
+                                <a href="#" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="https://github.com/Ahesanali786/billin_software" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>Billing System Software</h3>
+                        </div>
+                        <p class="project-description">
+                            A secure and scalable billing backend built with Laravel. Includes features like invoice
+                            generation, GST handling, client and product management, PDF export, multi-user roles
+                            (admin, staff), and payment tracking. Designed for SMEs with user-friendly dashboards and
+                            efficient reporting.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">⚙️ Laravel</span>
+                            <span class="tech-tag">🐘 PHP</span>
+                            <span class="tech-tag">🗄️ MySQL</span>
+                            <span class="tech-tag">📄 HTML</span>
+                            <span class="tech-tag">🎨 CSS</span>
+                            <span class="tech-tag">🧠 JavaScript</span>
+                            <span class="tech-tag">📦 GitHub</span>
+                            <span class="tech-tag">🎯 Bootstrap</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/e-commerce-img.avif" alt="E-Commerce Web Application">
+                        <div class="project-overlay">
+                            <div class="overlay-content">
+                                <a href="#" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="https://github.com/Ahesanali786/E-Commerce" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>E-Commerce Web Application</h3>
+                        </div>
+                        <p class="project-description">
+                            A full-featured e-commerce backend built using Laravel. Includes product listings by
+                            category, cart and checkout system, secure user authentication, coupon management, order
+                            processing, and admin dashboard for product & order management.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">⚙️ Laravel</span>
+                            <span class="tech-tag">🐘 PHP</span>
+                            <span class="tech-tag">🗄️ MySQL</span>
+                            <span class="tech-tag">📄 HTML</span>
+                            <span class="tech-tag">🎨 CSS</span>
+                            <span class="tech-tag">🧠 JavaScript</span>
+                            <span class="tech-tag">📦 GitHub</span>
+                            <span class="tech-tag">🎯 Bootstrap</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/Scrapy-LinkExtractor.jpg" alt="Link Extractor Tool">
+                        <div class="project-overlay">
+                            <div class="overlay-content">
+                                <a href="#" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="https://github.com/Ahesanali786/link-extractor" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>Link Extractor Tool</h3>
+                        </div>
+                        <p class="project-description">
+                            A smart tool built with Laravel and JavaScript that scans any given webpage URL, extracts
+                            all hyperlinks,
+                            and displays them in a clean format. Includes support for filtering by domain, copying
+                            links, and saving
+                            extracted URLs for later use.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">⚙️ Laravel</span>
+                            <span class="tech-tag">🐘 PHP</span>
+                            <span class="tech-tag">🗄️ MySQL</span>
+                            <span class="tech-tag">🔁 AJAX</span>
+                            <span class="tech-tag">📄 HTML</span>
+                            <span class="tech-tag">🎨 CSS</span>
+                            <span class="tech-tag">🧠 JavaScript</span>
+                            <span class="tech-tag">📦 GitHub</span>
+                            <span class="tech-tag">🎯 Bootstrap</span>
+                        </div>
+                        <div class="project-stats">
+                            <div class="stat">
+                                <i class="fas fa-clock"></i>
+                                <span>Coming Soon</span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/novus-invoice.jpg" alt="Novus Invoice System">
+                        <div class="project-overlay">
+                            <div class="overlay-content">
+                                <a href="#" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="https://github.com/Ahesanali786/novus-invoice" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>Novus Invoice System</h3>
+                        </div>
+                        <p class="project-description">
+                            A modern invoicing solution built with Laravel and React (Inertia.js). Features include
+                            client
+                            management, dynamic tax settings, invoice generation with PDF export, multi-currency
+                            support, itemized
+                            billing, and an intuitive dashboard for tracking invoice status and payments.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">⚙️ Laravel</span>
+                            <span class="tech-tag">🌀 Inertia.js</span>
+                            <span class="tech-tag">⚛️ React</span>
+                            <span class="tech-tag">🐘 PHP</span>
+                            <span class="tech-tag">🗄️ MySQL</span>
+                            <span class="tech-tag">🎨 Tailwind CSS</span>
+                            <span class="tech-tag">📄 PDF Export</span>
+                            <span class="tech-tag">📦 GitHub</span>
+                        </div>
+                        <div class="project-stats">
+                            <div class="stat">
+                                <i class="fas fa-clock"></i>
+                                <span class="text-sm text-gray-500 italic">🚫 Not yet uploaded to GitHub — coming
+                                    soon!</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card coming-soon-card">
+                    <div class="project-image">
+                        <img src="assets/coming-soon.jpg" alt="More Projects Coming Soon">
+                        <div class="project-overlay">
+                            <div class="overlay-content">
+                                <span class="project-link">
+                                    <i class="fas fa-spinner fa-pulse"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content text-center">
+                        <div class="project-header">
+                            <h3>More Projects Coming Soon</h3>
+                        </div>
+                        <p class="project-description text-gray-600 italic">
+                            Stay tuned! Exciting backend projects are in the pipeline. More features, cleaner
+                            architecture,
+                            and innovative solutions are on the way.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">💻 Laravel</span>
+                            <span class="tech-tag">⚛️ React</span>
+                            <span class="tech-tag">⚙️ API</span>
+                            <span class="tech-tag">📦 Docker</span>
+                            <span class="tech-tag">🚀 Deployment</span>
+                        </div>
+                        <div class="project-stats mt-4">
+                            <div class="stat">
+                                <i class="fas fa-hourglass-half"></i>
+                                <span class="text-sm text-gray-500 italic">Under Development</span>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="project-stats">
+                            <div class="stat">
+                                <i class="fas fa-spinner fa-spin"></i>
+                                <span class="text-sm text-gray-500 italic">Coming Soon...</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Get In Touch</span>
+                <h2 class="section-title">Let's Build Something Amazing</h2>
+                <p class="section-subtitle">
+                    Ready to start your next project? Let's discuss how I can help bring your ideas to life
+                </p>
+            </div>
+            <div class="contact-content">
+                <!-- Contact Card -->
+                <div class="contact-card">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p>ahesanalimomin304@gmail.com</p>
+                            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ahesanalimomin304@gmail.com"
+                                target="_blank" rel="noopener noreferrer" class="contact-link">
+                                Send Email via Gmail
+                            </a>
+                        </div>
+
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Phone</h4>
+                            <p>+91 7859942533</p>
+                            <a href="tel:+917859942533" class="contact-link">Call Now</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Location</h4>
+                            <p>Ahmedabad, India</p>
+                            <span class="contact-link">Available Worldwide</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Availability Card -->
+                <div class="availability-card">
+                    <div class="availability-header">
+                        <div class="status-dot"></div>
+                        <h4>Open to Work</h4>
+                    </div>
+                    <p>I'm actively looking for new opportunities and open to collaborating on exciting projects.</p>
+                    <div class="response-time">
+                        <i class="fas fa-clock"></i>
+                        <span>Usually responds within 2 hours</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <div class="logo-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <span class="logo-text">DevMaster</span>
+                    </div>
+                    <p class="footer-description">
+                        Building scalable backend solutions that power modern applications.
+                        Let's create something amazing together.
+                    </p>
+                    <div class="footer-social">
+                        <a href="https://www.linkedin.com/in/kadiwala-ahesanali-142647303/" target="_blank"
+                            class="social-link" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com/Ahesanali786" target="_blank" class="social-link"
+                            aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Stack Overflow">
+                            <i class="fab fa-stack-overflow"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="link-group">
+                        <h4>Navigation</h4>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#skills">Skills</a></li>
+                            <li><a href="#projects">Projects</a></li>
+                        </ul>
+                    </div>
+                    <div class="link-group">
+                        <h4>Contact</h4>
+                        <ul>
+                            <li><a href="#contact">Get In Touch</a></li>
+                            <li><a href="https://mail.google.com/mail/?view=cm&fs=1&to=ahesanalimomin304@gmail.com">Email
+                                    Me</a></li>
+                            <li><a href="tel:+917859942533">Call Me</a></li>
+                            <li><a href="#">Schedule Call</a></li>
+                        </ul>
+                    </div>
+                    <div class="link-group">
+                        <h4>Skills</h4>
+                        <ul>
+                            <li>Laravel & PHP</li>
+                            <li>Inertia.js & React</li>
+                            <li>MySQL & Eloquent ORM</li>
+                            <li>Blade Templating</li>
+                            <li>REST APIs</li>
+                            <li>Authentication (OTP & Custom)</li>
+                            <li>Feature & Unit Testing</li>
+                            <li>Tailwind CSS</li>
+                            <li>Livewire (basic)</li>
+                            <li>Git & GitHub</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    <p>&copy; 2025 Ahesanali. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
